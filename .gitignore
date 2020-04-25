@@ -1,1 +1,10 @@
 /videos/
+/venv/
+/dataset/
+/build/
+/out.log
+/plot.png
+/dist/
+/templates/
+/.idea/
+/__pycache__/
