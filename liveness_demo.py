@@ -60,7 +60,7 @@ def update_api(param):
 
 def log_status(host, status):
     r = requests.post('http://localhost/liveness-websocket/api/log.php',
-                      data={'HostName': host, 'Organization': 'NEC', 'Status': status})
+                      data={'HostName': host, 'Organization': 'XYZ', 'Status': status})
     print(r.json())
 
 
@@ -157,7 +157,7 @@ def liveness_detection(cap):
 
 
 def check_validity(param):
-    r = requests.get('http://license.infitech.in/api/licenseStatus.php?app=liveness&org=NEC&&host=' + param)
+    r = requests.get('http:url.com/t=' + param)
     json = r.json()
     if json["Status"]:
         log_status(param, "Logged In")
